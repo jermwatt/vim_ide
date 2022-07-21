@@ -6,12 +6,14 @@ set tabstop=4
 set autoindent
 set smartindent
 set cursorline
+set hidden
+set noerrorbells
 set mouse=a
 set ttymouse=xterm2
 set anti
 set history=1000
-set scrolloff=5
-set hlsearch
+set scrolloff=8
+set nohlsearch
 set incsearch
 set ignorecase
 set smartcase
@@ -20,6 +22,7 @@ set linebreak " set bex=DESIRED_EXTENSION
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+set signcolumn=yes
 
 " plugs
 if filereadable(expand("~/.vimrc.plug"))
