@@ -1,8 +1,8 @@
 # vim ide setup
-Portable vim ide setup with easy to use vimrc options and plugins.
+Portable zsh + vim ide setup with suite of useful zsh + vim options and plugins.
 
-To setup copy .vimrc  .vimrc.plug to local machine, and and bash `install_plugins.sh`.
+To setup on local machine copy .zshrc,  .vimrc  .vimrc.plug to local machine, bash `install_plugins.sh`, and copy `/fonts` to appropriate directory.
 
-To run a docker container with this setup built in run 
+To run a docker container with everything baked in already run 
 
 ```docker-compose up -d```
