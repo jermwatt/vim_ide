@@ -21,15 +21,7 @@ set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-autocmd VimEnter * NERDTree | wincmd p
-let NERDTreeWinPos=0
-
-" close Vim or a tab automatically when NERDTree is the last window
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-
-
-" have the same NERDTree on every tab automatically
-autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
-
-" Close the tab if NERDTree is the only window remaining in it.
-autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" plugs
+if filereadable(expand("~/.vimrc.plug"))
+    source ~/.vimrc.plug
+endif
