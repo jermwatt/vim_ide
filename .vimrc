@@ -23,6 +23,7 @@ set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set signcolumn=yes
+set encoding=UTF-8
 
 " plugs
 if filereadable(expand("~/.vimrc.plug"))

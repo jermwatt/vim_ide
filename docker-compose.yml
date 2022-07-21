@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  vim_test:
+    image: vim_test
+    container_name: vim_test
+    command: >
+      /bin/sh -c "tail -f /dev/null"
