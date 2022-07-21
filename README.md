@@ -1,4 +1,4 @@
-# vimrc setup
+# vim ide setup
 Portable vim ide setup with easy to use vimrc options and plugins.
 
 To setup copy .vimrc  .vimrc.plug to local machine, and and bash `install_plugins.sh`.
