@@ -1,6 +1,8 @@
 set number
-syntax on 
+syntax enable
+filetype plugin indent on 
 colorscheme ron
+set shell=/usr/bin/zsh
 set bg=dark
 set tabstop=4
 set autoindent
@@ -12,7 +14,7 @@ set mouse=a
 set ttymouse=xterm2
 set anti
 set history=1000
-set scrolloff=8
+set scrolloff=0
 set nohlsearch
 set incsearch
 set ignorecase
@@ -26,6 +28,7 @@ set signcolumn=yes
 set encoding=UTF-8
 set spell
 set spelllang=en_us
+nmap <leader>t :below terminal<CR>
 
 " plugs
 if filereadable(expand("~/.vimrc.plug"))

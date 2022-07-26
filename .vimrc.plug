@@ -4,6 +4,9 @@ autocmd VimEnter * NERDTree | wincmd p
 " make sure nerdtree is open on left side
 let NERDTreeWinPos=0
 
+" let NERDtree see hidden files
+let NERDTreeShowHidden=1
+
 " close Vim or a tab automatically when NERDTree is the last window
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 

@@ -1,7 +1,8 @@
 version: "3.8"
 services:
   vim_ide:
-    image: jermwatt/vim_ide
+    build: .
+    image: vim_ide
     container_name: vim_ide
     command: >
       /bin/sh -c "tail -f /dev/null"
