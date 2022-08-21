@@ -26,8 +26,7 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set signcolumn=yes
 set encoding=UTF-8
-set spell
-set spelllang=en_us
+set nospell
 nmap <leader>t :below terminal<CR>
 
 " plugs
